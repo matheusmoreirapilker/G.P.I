@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background-color: rgb(124, 136, 146);
+}
+header{
+    text-align: center;
+
+}
+header > p{
+    font-weight: bold;
+}
+main{
+ display: block;
+ text-align: center;
+}
+.email{
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    margin-bottom: 20px;
+    background-color: lightgray;
+}
+.senha{
+    width: 230px;
+    margin-bottom: 20px;
+    background-color: lightgray;
+}
+.botao{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+#mostrar{
+    margin-bottom: 20px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
+}

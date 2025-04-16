@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | GPI</title>
+    <link rel="shortcut icon" href="gpi-logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Bem vindo!</h1>
+        <p>Por favor Digite seu usuário e senha.</p>
+       <b>Email:</b> <input type="email" name="user" id="user" class="email">
+        <br>
+         <b>Senha:</b> <input type="password" name="senha" id="senha" class="senha">
+         <br>
+         <input type="checkbox" name="mostrar" id="mostrar" onclick="mostrar()"> <b>Mostrar Senha</b>
+         <br>
+        <button onclick="entrar()" class="botao">Entrar</button>
+        <br>
+        <a href="https://wa.me/5527999836593">Suporte🔗</a>
+    </main>
+    <footer>
+        <p><b>Feito por Matheus Pilker</b></p>
+    </footer>
+    <script>
+       
+        function entrar(){
+            var user = document.getElementById('user').value
+            var senha = document.getElementById('senha').value
+            if(user === "dante@gmail.com" && senha === "4114205"){
+                document.location.href = 'index02.html'
+            }
+            else if (user === "anonimogpi@cypher.cy" && senha ==="1911625"){
+                document.location.href ='index03.html'
+            }
+            else{
+                 document.write("ERRO!!! ")
+                 document.writeln("Tente novamente")
+                
+            }
+        }
+        function mostrar(){
+            var c = document.getElementById('mostrar')
+            var s = document.getElementById('senha')
+            if(c.checked){
+                s.type = 'text'
+            }
+            else{
+                s.type = 'password'
+            }
+        }
+        
+    </script>
+</body>
+</html>
